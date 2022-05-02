@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_add"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/add_big_text"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/add_small_text"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/nameTe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Name" />
+
+    <EditText
+        android:id="@+id/infoTe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wirte Descriptionm"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/priceTe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Wirte price"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/dateTe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Wirte date"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addToDbButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to DB" />
+</LinearLayout>
+
+
